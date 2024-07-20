@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/lapNumberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8c62c0"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_medium"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lapTimeTextView"
+        android:fontFamily="@font/poppins_bold"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#a1a1a1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="end" />
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_light">#FDEDEC</color>
+    <color name="primary">#9C27B0</color>
+    <color name="primary_dark">#7B1FA2</color>
+    <color name="grey">#E0E0E0</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="accent">#941366</color>
+    <color name="j.xml">#f4ded8</color>
+    <color name="unselected">#685dac</color>
+
+    #685dac
+    <color name="button_background_color">#FF4081</color>
+    <color name="timer_text_color">#3F51B5</color>
+
+    <!-- res/values/colors.xml -->
+
+        <color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="colorBackground">#FFFFFF</color>
+        <color name="colorTextPrimary">#212121</color>
+        <color name="colorTextSecondary">#757575</color>
+        <!-- Add more colors as needed -->
+
+</resources>

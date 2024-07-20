@@ -1,0 +1,12 @@
+<!-- ic_play.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="30dp"
+    android:height="30dp"
+    android:viewportWidth="24.0"
+    android:viewportHeight="24.0"
+    android:tint="@color/white"
+    android:alpha="0.87">
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M8,5v14l11,-7z"/>
+</vector>

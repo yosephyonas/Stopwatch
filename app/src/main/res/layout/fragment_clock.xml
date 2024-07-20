@@ -1,0 +1,43 @@
+<!-- res/layout/fragment_clock.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#8c62c0"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".ClockFragment">
+
+    <com.forestspi.ritluck.ClockView
+        android:id="@+id/clockView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="32dp" />
+
+
+    <TextView
+        android:id="@+id/localTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="Local Time"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_bold"
+
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/localtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Local Time"
+        android:fontFamily="@font/poppins_medium"
+
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<!-- res/layout/fragment_stopwatch.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="0dp"
+    android:background="#8c62c0"
+    tools:context=".StopwatchFragment">
+
+    <RelativeLayout
+        android:layout_width="342dp"
+        android:layout_height="182dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <com.forestspi.ritluck.CircularProgressView
+            android:id="@+id/stopwatchProgress"
+            android:layout_width="308dp"
+            android:layout_height="331dp"
+            android:layout_gravity="center"
+            app:backgroundColor="@color/grey"
+            app:progressColor="@color/accent" />
+
+        <TextView
+            android:id="@+id/stopwatchTime"
+            android:layout_width="308dp"
+            android:layout_height="331dp"
+
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:text="00:00.00"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/bestLapTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Time: --:--:--.--"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lapTimesRecyclerView"
+        android:layout_width="411dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_background"
+        android:clipChildren="false"
+        android:clipToPadding="true"
+        android:fadeScrollbars="true"
+        android:overScrollMode="never"
+        android:paddingStart="30dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="30dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/resetButton"
+            style="@style/ButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_circle_reset"
+            android:contentDescription="@string/reset"
+            android:src="@drawable/ic_reset" />
+
+        <ImageButton
+            android:id="@+id/startStopButton"
+            style="@style/ButtonStyle"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_circle_play"
+            android:contentDescription="@string/start"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/lapButton"
+            style="@style/ButtonStyle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/button_circle_lap"
+            android:contentDescription="Lap"
+            android:src="@drawable/ic_lap" />
+    </LinearLayout>
+</LinearLayout>
